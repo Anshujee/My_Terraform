@@ -8,7 +8,7 @@ resource "aws_instance" "First_ec2_by_using_terrraform" {
     #vpc_security_group_ids = ["vpc-0920e9e1d645c576e"]
     subnet_id = "subnet-079be55a8cf563fe9"
     key_name = "key_1_pair"
-    count = 1
+    count = 2 #  Creates two identical instances.
     tags = {
         Name= "Anshu_EC2"
     }
